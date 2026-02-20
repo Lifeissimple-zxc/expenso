@@ -1,6 +1,6 @@
 # Expenso
 
-Expenso is a AI bot for expense tracking.
+Expenso is an AI bot for expense tracking.
 
 ## Setup
 Linter:
