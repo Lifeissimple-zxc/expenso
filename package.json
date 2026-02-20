@@ -25,6 +25,5 @@
 		"tesseract.js": "^7.0.0",
 		"zod": "^4.3.6"
 	},
-	"type": "module",
-	"module": "commonjs"
+	"type": "module"
 }

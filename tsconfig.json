@@ -1,15 +1,13 @@
 {
 	"include": ["src/**/*", "package.json"],
+	"exclude": ["node_modules", "dist"],
 	// Visit https://aka.ms/tsconfig to read more about this file
 	"compilerOptions": {
-		"baseUrl": ".",
-		"paths": {
-			"~/*": ["src/*"]
-		},
-
+		"target": "es2022",
 		// Environment Settings
 		// See also https://aka.ms/tsconfig/module
 		"module": "nodenext",
+		"moduleResolution": "nodenext",
 
 		// Other Outputs
 		"sourceMap": true,
@@ -25,6 +23,11 @@
 		"isolatedModules": true,
 		"noUncheckedSideEffectImports": true,
 		"moduleDetection": "force",
-		"skipLibCheck": true
+		"skipLibCheck": true,
+
+		"baseUrl": ".",
+		"paths": {
+			"@root": ["src/*"]
+		}
 	}
 }

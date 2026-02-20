@@ -1,6 +1,6 @@
 import dotenv from "dotenv"
 import { Telegraf } from "telegraf"
-import { env } from "~/config/env"
+import { env } from "~/config/env.ts"
 
 dotenv.config()
 
