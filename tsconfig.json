@@ -1,5 +1,5 @@
 {
-	"include": ["src/**/*", "package.json"],
+	"include": ["src/**/*"],
 	"exclude": ["node_modules", "dist"],
 	// Visit https://aka.ms/tsconfig to read more about this file
 	"compilerOptions": {
@@ -25,9 +25,8 @@
 		"moduleDetection": "force",
 		"skipLibCheck": true,
 
-		"baseUrl": ".",
-		"paths": {
-			"@root": ["src/*"]
-		}
+		"rootDir": "./src",
+		"outDir": "dist",
+		"customConditions": ["source"]
 	}
 }
